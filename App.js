@@ -13,7 +13,9 @@ export default function App() {
   return (
     <View style={styles.container}>
       <ImageBackground source={image} style={styles.image}>
-        <TextInput style={styles.input} textAlign={"center"} />
+        <View style={styles.form}>
+          <TextInput style={styles.input} textAlign={"center"} />
+        </View>
       </ImageBackground>
       <StatusBar style="auto" />
     </View>
@@ -31,6 +33,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     resizeMode: "cover",
   },
+  form: {},
   input: {
     borderWidth: 1,
     borderColor: "#f0f8ff",
